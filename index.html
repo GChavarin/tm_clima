@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 60%;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 4px;
+          text-align: left;
+          height: 42px;
+        }
+        img {
+            height: 95%;
+
+        }
+      </style>   
+    <meta charset="UTF-8">
+    <title>Consulta de Clima por Ciudad(es)</title> 
+</head>
+<body>
+    <h1>Consulta del Clima</h1>
+
+    <div>
+        <label for="ciudad">Ciudad(es) :</label>
+     </div>
+     <div>
+         <input type="text" id="inputCiudades">
+         <button onclick="realizarConsulta()">Consultar Clima(s)</button>
+         <br><br>
+         <label>Escribe el nombre de la ciudad (Guadalajara) o ciudades separadas por coma (Guadalajara, Monterrey, ...)</label>
+     </div>
+
+    <br><br>
+
+    <div>
+        <button onclick="limpiarDatos()">Limpiar</button>
+   </div>
+   
+   <br><br>
+
+   <div>
+    <table id="tabla-clima">
+      <thead>
+        <tr>
+          <th style="width: 8%;"></th>
+          <th style="width: 20%;">Ciudad</th>
+          <th style="width: 22%;">Temperatura</th>
+          <th style="width: 50%;">Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
